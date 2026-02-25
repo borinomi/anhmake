@@ -20,16 +20,16 @@ export default function FloatingCTA() {
               d="M 50,50 m -37,0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
             />
           </defs>
-          <text className="fill-white text-[11px] font-semibold tracking-widest uppercase">
+          <text className="fill-axe-dark text-[11px] font-semibold tracking-widest uppercase">
             <textPath href="#circle-path" startOffset="0%">
               BOOK FREE CONSULTATION • BOOK FREE CONSULTATION •
             </textPath>
           </text>
         </svg>
 
-        {/* Center circle with arrow */}
+        {/* Center circle — sized to cover text path (radius 37 out of viewBox 100 → 74% of 96px = ~71px) */}
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="w-[68px] h-[68px] bg-axe-dark rounded-full flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+          <div className="w-[74px] h-[74px] bg-axe-dark rounded-full flex items-center justify-center group-hover:scale-105 transition-transform duration-300 shadow-lg">
             <svg
               width="20"
               height="20"
