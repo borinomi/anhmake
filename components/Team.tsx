@@ -6,10 +6,10 @@ export const members = [
     initials: "AK",
   },
   {
-    name: "Dỗ Huệ",
+    name: "Đỗ Huệ",
     role: "Operations Manager",
     credential: "Manage 350+ workflows",
-    initials: "DH",
+    initials: "ĐH",
   },
   {
     name: "Eden Park",
