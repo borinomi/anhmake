@@ -17,8 +17,8 @@ const navLinks = [
     label: "Results",
     href: "#",
     dropdown: [
-      { label: "Case Studies", href: "#" },
-      { label: "Client Reviews", href: "#" },
+      { label: "Case Studies", href: "/case-studies" },
+      { label: "Client Reviews", href: "/client-reviews" },
     ],
   },
   { label: "About Us", href: "/about", dropdown: [] },

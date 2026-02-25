@@ -44,7 +44,7 @@ export const cases = [
 
 export default function CaseStudies() {
   return (
-    <section className="py-20 md:py-28 px-4 sm:px-6 lg:px-8">
+    <section id="case-studies" className="py-20 md:py-28 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">

@@ -119,7 +119,7 @@ export default function Reviews() {
   );
 
   return (
-    <section className="py-20 md:py-28 bg-white">
+    <section id="client-reviews" className="py-20 md:py-28 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-12">
