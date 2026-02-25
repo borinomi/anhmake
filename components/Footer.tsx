@@ -71,9 +71,7 @@ export default function Footer() {
                   key={social.label}
                   href={social.href}
                   aria-label={social.label}
-                  className={`w-9 h-9 flex items-center justify-center rounded-full text-white/70 hover:text-white transition-colors duration-200 ${
-                    social.label === "Threads" ? "hover:opacity-80" : "bg-white/10 hover:bg-axe-blue"
-                  }`}
+                  className="w-9 h-9 flex items-center justify-center rounded-full bg-white/10 text-white/70 hover:bg-axe-blue hover:text-white transition-colors duration-200"
                 >
                   {social.icon}
                 </Link>
