@@ -73,6 +73,8 @@ export default function Footer() {
                   key={social.label}
                   href={social.href}
                   aria-label={social.label}
+                  target={social.href !== "#" ? "_blank" : undefined}
+                  rel={social.href !== "#" ? "noopener noreferrer" : undefined}
                   className="w-9 h-9 flex items-center justify-center rounded-full bg-white/10 text-white/70 hover:bg-axe-blue hover:text-white transition-colors duration-200"
                 >
                   {social.icon}
