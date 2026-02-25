@@ -29,7 +29,7 @@ export default function FloatingCTA() {
 
         {/* Center circle with arrow */}
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="w-14 h-14 bg-axe-dark rounded-full flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+          <div className="w-[68px] h-[68px] bg-axe-dark rounded-full flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
             <svg
               width="20"
               height="20"
