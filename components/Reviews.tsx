@@ -4,88 +4,24 @@ import { useState } from "react";
 
 export const reviews = [
   {
-    quote: "Anhmake did great work.",
-    reviewer: "Founder & CEO",
-    company: "Advertising & Marketing Company",
+    quote:
+      "Our teams were spending hours every day creating, sending, and reviewing Excel charts for internal logistics. Anhmake built custom APIs and workflows that eliminated all of that — now our people focus on work that actually moves the needle.",
+    reviewer: "Operations Team",
+    company: "Hoa Binh",
     rating: 5,
   },
   {
-    quote: "Their professionalism stood out above anything else.",
-    reviewer: "Owner",
-    company: "BK Accounting Group LLC",
+    quote:
+      "Our staff used to spend countless hours manually updating, compiling, and formatting production data into reports. Now everything flows into the database automatically and the entire team can see results on a live dashboard. Productivity has never been higher.",
+    reviewer: "Production Management",
+    company: "YS Corp",
     rating: 5,
   },
   {
-    quote: "They provided an amazing service.",
+    quote:
+      "Creating ad pamphlets and namecards used to take us hours of tedious manual work. Anhmake designed scripts that plug right into the tools we already use — what took hours now takes just a few minutes. It's been a game-changer for our team.",
     reviewer: "CEO",
-    company: "Social Media Marketing Agency",
-    rating: 5,
-  },
-  {
-    quote:
-      "I was impressed by the level of personalization and attention to detail they brought to our project.",
-    reviewer: "Engineering Manager",
-    company: "Insurance Company",
-    rating: 5,
-  },
-  {
-    quote: "The automations that they build are amazing.",
-    reviewer: "Owner",
-    company: "Gulf Coast Limb and Brace",
-    rating: 5,
-  },
-  {
-    quote:
-      "Their ability to create automated solutions that saved us dozens of hours per week was remarkable.",
-    reviewer: "Executive",
-    company: "Proven Marketing Solutions",
-    rating: 5,
-  },
-  {
-    quote: "They delivered what they promised, on time and on budget.",
-    reviewer: "Managing Partner",
-    company: "Stonegate Legal Services",
-    rating: 5,
-  },
-  {
-    quote: "They were very responsive and knowledgeable throughout the project.",
-    reviewer: "Owner",
-    company: "J Signs and Graphics",
-    rating: 5,
-  },
-  {
-    quote:
-      "They had excellent communication and kept us informed every step of the way.",
-    reviewer: "IT",
-    company: "Zoweh",
-    rating: 5,
-  },
-  {
-    quote:
-      "Their expertise, coupled with exceptional customer service, made this one of our best vendor experiences.",
-    reviewer: "Executive",
-    company: "Web Brilliant Company",
-    rating: 5,
-  },
-  {
-    quote:
-      "We're impressed with their knowledge of automation and how they applied it to our specific industry.",
-    reviewer: "CEO & Founder",
-    company: "Client Acquisition Firm",
-    rating: 5,
-  },
-  {
-    quote:
-      "Service delivery was great and exceeded our expectations on every metric.",
-    reviewer: "Executive",
-    company: "The Growth Center",
-    rating: 5,
-  },
-  {
-    quote:
-      "What I find most impressive is that a company like Anhmake exists! They completely changed how we operate.",
-    reviewer: "VP of Operations",
-    company: "Cleverly",
+    company: "WeGrid",
     rating: 5,
   },
 ];
