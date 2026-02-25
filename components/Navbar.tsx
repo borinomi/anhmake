@@ -22,14 +22,7 @@ const navLinks = [
     ],
   },
   { label: "About Us", href: "/about", dropdown: [] },
-  {
-    label: "Resources",
-    href: "#",
-    dropdown: [
-      { label: "Blog", href: "#" },
-      { label: "Podcast", href: "#" },
-    ],
-  },
+
 ];
 
 export default function Navbar() {

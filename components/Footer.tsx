@@ -9,8 +9,6 @@ const serviceLinks = [
 const companyLinks = [
   { label: "Case Studies", href: "#" },
   { label: "About Us", href: "#" },
-  { label: "Blog", href: "#" },
-  { label: "Podcast", href: "#" },
 ];
 
 const socialLinks = [
