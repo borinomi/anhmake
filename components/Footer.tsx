@@ -2,8 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 
 const serviceLinks = [
-  { label: "AI and Automation", href: "#" },
-  { label: "Project Management and CRMs", href: "#" },
+  { label: "AI and Automation", href: "/ai-automation" },
+  { label: "n8n Automation", href: "/n8n-automation" },
 ];
 
 const companyLinks = [
