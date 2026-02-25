@@ -340,7 +340,6 @@ export default function AIAutomationPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {cases.map((c, i) => (
               <div key={i} className="bg-white rounded-2xl p-8 border border-axe-dark/5 shadow-sm">
-                <div className="text-yellow-400 text-xl mb-4">★★★★★</div>
                 <p className="text-axe-dark/70 text-sm leading-relaxed mb-6">&ldquo;{c.quote}&rdquo;</p>
                 <div>
                   <p className="font-bold text-axe-dark text-sm">{c.author}</p>
