@@ -3,7 +3,6 @@ import CaseStudies from "@/components/CaseStudies";
 import { members } from "@/components/Team";
 import { stats } from "@/components/StatsBar";
 import Technology from "@/components/Technology";
-import Reviews from "@/components/Reviews";
 
 export const metadata = {
   title: "n8n Automation | Anhmake",
@@ -181,8 +180,6 @@ export default function N8nAutomationPage() {
       {/* Case Studies */}
       <CaseStudies />
 
-      {/* Client Reviews */}
-      <Reviews />
 
       {/* How We Outperform */}
       <section className="py-24 bg-axe-dark text-white">
