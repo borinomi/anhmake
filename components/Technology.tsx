@@ -1,3 +1,5 @@
+import { useTranslations } from "next-intl";
+
 export const categories = [
   {
     title: "Project Management",
@@ -9,12 +11,7 @@ export const categories = [
     title: "Industry Specific",
     color: "bg-green-50 border-green-100",
     titleColor: "text-green-700",
-    tools: [
-      "Garment factory",
-      "Knit Vendor",
-      "Logistics",
-      "Real estate",
-    ],
+    tools: ["Garment factory", "Knit Vendor", "Logistics", "Real estate"],
   },
   {
     title: "Custom Scripting",
@@ -43,38 +40,27 @@ export const categories = [
 ];
 
 export default function Technology() {
+  const t = useTranslations("Technology");
   return (
     <section className="py-20 md:py-28 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
         <div className="text-center mb-14">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-axe-dark">
-            Technology we specialize in
+            {t("heading")}
           </h2>
           <p className="mt-4 text-lg text-axe-dark/60 max-w-xl mx-auto">
-            We&apos;re tool-agnostic. We pick the right technology for your
-            specific business context.
+            {t("subtext")}
           </p>
         </div>
-
-        {/* Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
           {categories.map((cat) => (
-            <div
-              key={cat.title}
-              className={`border rounded-2xl p-6 ${cat.color}`}
-            >
-              <h3
-                className={`text-xs font-bold uppercase tracking-widest mb-4 ${cat.titleColor}`}
-              >
+            <div key={cat.title} className={`border rounded-2xl p-6 ${cat.color}`}>
+              <h3 className={`text-xs font-bold uppercase tracking-widest mb-4 ${cat.titleColor}`}>
                 {cat.title}
               </h3>
               <div className="flex flex-wrap gap-2">
                 {cat.tools.map((tool) => (
-                  <span
-                    key={tool}
-                    className="inline-flex items-center px-3 py-1.5 bg-white border border-white/60 rounded-lg text-xs font-semibold text-axe-dark shadow-sm"
-                  >
+                  <span key={tool} className="inline-flex items-center px-3 py-1.5 bg-white border border-white/60 rounded-lg text-xs font-semibold text-axe-dark shadow-sm">
                     {tool}
                   </span>
                 ))}
