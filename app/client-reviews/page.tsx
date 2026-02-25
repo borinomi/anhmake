@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { reviews, StarRating } from "@/components/Reviews";
+import { reviews } from "@/components/Reviews";
 
 const CARDS_VISIBLE = 3;
 
@@ -20,22 +20,9 @@ export default function ClientReviewsPage() {
           {/* Header */}
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-12">
             <div>
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-4 border border-axe-dark/20 rounded-full text-xs font-semibold text-axe-dark tracking-wider uppercase bg-white">
-                Clutch Reviews
-              </div>
               <h1 className="text-3xl sm:text-4xl font-bold text-axe-dark">
-                Anhmake Client Reviews
+                Client Reviews
               </h1>
-              {/* Rating */}
-              <div className="flex items-center gap-3 mt-4">
-                <span className="text-5xl font-bold text-axe-dark">5.0</span>
-                <div>
-                  <StarRating count={5} />
-                  <p className="text-sm text-axe-dark/50 mt-1">
-                    3 verified reviews
-                  </p>
-                </div>
-              </div>
             </div>
 
             {/* Navigation */}
@@ -73,7 +60,6 @@ export default function ClientReviewsPage() {
                 key={`${page}-${i}`}
                 className="bg-white border border-gray-200 rounded-2xl p-7 flex flex-col gap-4 shadow-sm hover:shadow-md transition-shadow duration-200"
               >
-                <StarRating count={review.rating} />
                 <blockquote className="text-axe-dark/80 text-sm leading-relaxed flex-1 italic">
                   &ldquo;{review.quote}&rdquo;
                 </blockquote>
