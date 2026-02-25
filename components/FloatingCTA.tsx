@@ -8,7 +8,11 @@ export default function FloatingCTA() {
       aria-label="Book Free Consultation"
     >
       <div className="relative w-24 h-24 animate-float">
-        {/* Rotating text ring */}
+
+        {/* Full background circle */}
+        <div className="absolute inset-0 rounded-full bg-axe-dark group-hover:scale-105 transition-transform duration-300" />
+
+        {/* Rotating text ring — on top of background */}
         <svg
           viewBox="0 0 100 100"
           className="absolute inset-0 w-full h-full animate-spin-slow"
@@ -27,12 +31,12 @@ export default function FloatingCTA() {
           </text>
         </svg>
 
-        {/* Center circle with arrow */}
+        {/* Center arrow */}
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="w-14 h-14 bg-axe-dark rounded-full flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+          <div className="w-10 h-10 bg-axe-blue rounded-full flex items-center justify-center">
             <svg
-              width="20"
-              height="20"
+              width="18"
+              height="18"
               viewBox="0 0 24 24"
               fill="none"
               stroke="white"
@@ -45,6 +49,7 @@ export default function FloatingCTA() {
             </svg>
           </div>
         </div>
+
       </div>
     </Link>
   )
