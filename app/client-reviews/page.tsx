@@ -28,11 +28,11 @@ export default function ClientReviewsPage() {
               </h1>
               {/* Rating */}
               <div className="flex items-center gap-3 mt-4">
-                <span className="text-5xl font-bold text-axe-dark">4.7</span>
+                <span className="text-5xl font-bold text-axe-dark">5.0</span>
                 <div>
                   <StarRating count={5} />
                   <p className="text-sm text-axe-dark/50 mt-1">
-                    13 verified reviews
+                    3 verified reviews
                   </p>
                 </div>
               </div>
