@@ -61,7 +61,7 @@ export default function Reviews() {
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-12">
           <div>
             <h2 className="text-3xl sm:text-4xl font-bold text-axe-dark">
-              Comments
+              Client Comments
             </h2>
           </div>
 
