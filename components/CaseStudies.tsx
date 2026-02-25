@@ -56,26 +56,7 @@ export default function CaseStudies() {
               Client work and results
             </h2>
           </div>
-          <Link
-            href="#"
-            className="flex items-center gap-1.5 text-sm font-semibold text-axe-dark hover:text-axe-blue transition-colors shrink-0"
-          >
-            VIEW ALL
-            <svg
-              className="w-4 h-4"
-              viewBox="0 0 16 16"
-              fill="none"
-              aria-hidden="true"
-            >
-              <path
-                d="M3 8h10M9 4l4 4-4 4"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </Link>
+
         </div>
 
         {/* Cards */}
