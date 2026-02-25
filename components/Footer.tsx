@@ -27,7 +27,7 @@ const socialLinks = [
     label: "Threads",
     href: "#",
     icon: (
-      <Image src="/icons/threads.png" alt="Threads" width={20} height={20} className="w-5 h-5 object-contain invert" />
+      <Image src="/icons/threads.png" alt="Threads" width={20} height={20} className="w-5 h-5 object-contain" />
     ),
   },
   {
