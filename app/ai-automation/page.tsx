@@ -115,7 +115,7 @@ export default function AIAutomationPage() {
   return (
     <main>
       {/* Hero */}
-      <section className="relative bg-axe-bg pt-24 pb-20 text-center overflow-hidden">
+      <section className="relative bg-white pt-24 pb-20 text-center overflow-hidden">
         <div className="max-w-4xl mx-auto px-4">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-axe-dark/20 bg-white text-sm font-medium text-axe-dark mb-8">
             <span className="w-2 h-2 rounded-full bg-axe-blue inline-block" />

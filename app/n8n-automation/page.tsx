@@ -1,7 +1,9 @@
 import Link from "next/link";
-import { cases } from "@/components/CaseStudies";
+import CaseStudies from "@/components/CaseStudies";
 import { members } from "@/components/Team";
 import { stats } from "@/components/StatsBar";
+import Technology from "@/components/Technology";
+import Reviews from "@/components/Reviews";
 
 export const metadata = {
   title: "n8n Automation | Anhmake",
@@ -39,44 +41,7 @@ const howPoints = [
   "We are tech agnostic, meaning we are not married to any tools, allowing us to be flexible to your operations and only recommend what's best for you.",
 ];
 
-const problems = [
-  "Low profit margin",
-  "Delays",
-  "Uncompetitive",
-  "Overworked staff",
-  "Redundancies",
-  "No clarity or control",
-  "Inconsistency and error",
-];
 
-const solutions = [
-  "Displace labor with automation",
-  "Cut dependencies with better systems",
-  "Add value with AI",
-  "Automate manual tasks",
-  "Sync tools and data",
-  "One source of truth",
-  "Automate for predictable outputs",
-];
-
-const outcomes = [
-  "High profit margin",
-  "Faster service",
-  "Better service",
-  "Add capacity",
-  "Better decisions",
-  "Consistent quality",
-  "Competitive advantage",
-];
-
-const techStack = [
-  { category: "Automation Platform", items: ["n8n", "Make.com", "Zapier"] },
-  { category: "Artificial Intelligence", items: ["ChatGPT", "Claude", "Grok", "Databricks"] },
-  { category: "CRM", items: ["Monday.com", "HubSpot", "Salesforce"] },
-  { category: "Project Management", items: ["Monday.com", "Airtable", "ClickUp", "Notion", "Motion"] },
-  { category: "Custom Scripting", items: ["JavaScript", "RAG pipelines", "RPA"] },
-  { category: "Industry Specific", items: ["QuickBooks", "Goodhire", "Teamdeck", "Atlassian"] },
-];
 
 const faqs = [
   {
@@ -214,50 +179,10 @@ export default function N8nAutomationPage() {
       </section>
 
       {/* Case Studies */}
-      <section className="py-24 bg-white">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <p className="text-xs font-bold tracking-widest text-axe-blue uppercase mb-3">Case Studies</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-axe-dark mb-4">
-              Client work and results
-            </h2>
-          </div>
-          <div className="space-y-8">
-            {cases.map((c, i) => (
-              <div key={i} className="bg-white rounded-2xl p-8 md:p-10 border border-axe-dark/8 shadow-sm">
-                <div className="flex flex-col md:flex-row gap-10">
-                  <div className="md:w-1/2">
-                    <span className="inline-block px-3 py-1 border border-axe-blue text-axe-blue text-xs font-semibold rounded-full mb-4">
-                      {c.industry}
-                    </span>
-                    <h3 className="text-xl font-bold text-axe-dark mb-4">{c.headline}</h3>
-                    <p className="text-xs font-bold tracking-widest text-axe-dark/40 uppercase mb-2">What We Did</p>
-                    <ul className="space-y-1">
-                      {c.whatWeDid.map((item, j) => (
-                        <li key={j} className="text-sm text-axe-dark/60 leading-relaxed flex gap-2">
-                          <span className="text-axe-blue mt-0.5">•</span>{item}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div className="md:w-1/2 flex flex-col justify-between">
-                    <p className="text-axe-dark/70 text-base leading-relaxed italic mb-6">&ldquo;{c.quote}&rdquo;</p>
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-axe-blue/20 flex items-center justify-center font-bold text-axe-blue">
-                        {c.author[0]}
-                      </div>
-                      <div>
-                        <p className="font-bold text-axe-dark text-sm">{c.author}</p>
-                        <p className="text-xs text-axe-dark/40">{c.client}</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <CaseStudies />
+
+      {/* Client Reviews */}
+      <Reviews />
 
       {/* How We Outperform */}
       <section className="py-24 bg-axe-dark text-white">
@@ -285,106 +210,9 @@ export default function N8nAutomationPage() {
         </div>
       </section>
 
-      {/* Outcomes Table */}
-      <section className="py-24 bg-white">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <p className="text-xs font-bold tracking-widest text-axe-blue uppercase mb-3">Outcomes</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-axe-dark mb-4">
-              Our n8n consultants solve bottlenecks for <span className="text-axe-blue">massive results</span>
-            </h2>
-            <p className="text-axe-dark/60 max-w-2xl mx-auto">
-              Every automation compounds results over time, for a flywheel of profitability and competitive advantage.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Problems */}
-            <div className="bg-white rounded-2xl p-8 border border-axe-dark/10 shadow-sm">
-              <h3 className="font-bold text-axe-dark text-lg mb-6 pb-4 border-b border-axe-dark/10">Problems</h3>
-              <ul className="space-y-3">
-                {problems.map((item, i) => (
-                  <li key={i} className="flex items-center gap-3 text-sm text-axe-dark/60">
-                    <span className="w-1.5 h-1.5 rounded-full bg-red-400 shrink-0" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            {/* Solutions */}
-            <div className="bg-axe-blue/5 rounded-2xl p-8 border border-axe-blue/20">
-              <h3 className="font-bold text-axe-dark text-lg mb-6 pb-4 border-b border-axe-blue/20">Solutions</h3>
-              <ul className="space-y-3">
-                {solutions.map((item, i) => (
-                  <li key={i} className="flex items-center gap-3 text-sm text-axe-dark/70">
-                    <div className="w-5 h-5 rounded-full bg-axe-blue/20 flex items-center justify-center shrink-0">
-                      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#1d3d8c" strokeWidth="2.5">
-                        <path d="M20 6L9 17l-5-5" />
-                      </svg>
-                    </div>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            {/* Outcomes */}
-            <div className="bg-axe-dark rounded-2xl p-8">
-              <h3 className="font-bold text-white text-lg mb-6 pb-4 border-b border-white/10">Outcomes</h3>
-              <ul className="space-y-3">
-                {outcomes.map((item, i) => (
-                  <li key={i} className="flex items-center gap-3 text-sm text-white/70">
-                    <div className="w-5 h-5 rounded-full bg-white/10 flex items-center justify-center shrink-0">
-                      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5">
-                        <path d="M20 6L9 17l-5-5" />
-                      </svg>
-                    </div>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-          <div className="text-center mt-12">
-            <Link
-              href="/free-automation-consultation"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-axe-dark text-white font-semibold rounded-full hover:bg-axe-blue transition-colors"
-            >
-              FREE CONSULTATION
-            </Link>
-          </div>
-        </div>
-      </section>
 
       {/* Tech Stack */}
-      <section className="py-24 bg-white">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <p className="text-xs font-bold tracking-widest text-axe-blue uppercase mb-3">Technology</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-axe-dark mb-4">
-              Technology we specialize in
-            </h2>
-            <p className="text-axe-dark/60 max-w-2xl mx-auto">
-              Get the perfect technology setup for your business.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {techStack.map((tech, i) => (
-              <div key={i} className="bg-white rounded-2xl p-8 border border-axe-dark/5">
-                <h3 className="font-bold text-axe-dark mb-4">{tech.category}</h3>
-                <div className="flex flex-wrap gap-2">
-                  {tech.items.map((item, j) => (
-                    <span
-                      key={j}
-                      className="px-3 py-1 bg-gray-50 text-axe-dark text-sm rounded-full border border-axe-dark/10"
-                    >
-                      {item}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Technology />
 
       {/* FAQs */}
       <section className="py-24 bg-white">

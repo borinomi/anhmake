@@ -1,4 +1,4 @@
-const categories = [
+export const categories = [
   {
     title: "Project Management",
     color: "bg-purple-50 border-purple-100",
