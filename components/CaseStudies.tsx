@@ -1,44 +1,44 @@
 import Link from "next/link";
 
-const cases = [
+export const cases = [
   {
-    industry: "Marketing Agency",
-    headline: "5X Capacity, 2.4X Onboarding Speed",
-    client: "Cleverly",
-    author: "Daniel Paulino",
+    industry: "Construction & Engineering",
+    headline: "Hours of Reporting Reduced to Minutes with Custom API Workflows",
+    client: "Hoa Binh",
+    author: "Operations Team",
     whatWeDid: [
-      "Rebuilt end-to-end client onboarding workflow in Monday.com",
-      "Automated lead assignment and follow-up sequences",
-      "Integrated LinkedIn outreach platform with CRM via Make.com",
+      "Designed custom APIs and automated workflows to replace manual Excel-based reporting",
+      "Eliminated repetitive chart creation, distribution, and review cycles",
+      "Freed up staff time to focus on higher-value strategic tasks",
     ],
     quote:
-      "What I find most impressive is that a company like Anhmake exists! They completely transformed how we operate — we scaled from 200 to 1,000+ clients without adding headcount.",
+      "Our teams were spending hours every day creating, sending, and reviewing Excel charts for internal logistics. Anhmake built custom APIs and workflows that eliminated all of that — now our people focus on work that actually moves the needle.",
   },
   {
-    industry: "Financial Services",
-    headline: "2X More Capacity From Better End-To-End Systems",
-    client: "Caffeinated Accountant",
-    author: "Joseph Martin",
+    industry: "Manufacturing",
+    headline: "Real-Time Production Visibility, Zero Manual Reporting",
+    client: "YS Corp",
+    author: "Production Management",
     whatWeDid: [
-      "Implemented FinancialCents as the central operations hub",
-      "Built automated client intake and document collection flows",
-      "Created real-time dashboards for workload visibility across the team",
+      "Automated capture of frequently changing production floor data into a central database",
+      "Eliminated manual data collection, consolidation, and report generation",
+      "Built real-time dashboards for instant production status visibility",
     ],
     quote:
-      "Their professionalism stood out. They delivered exactly what they promised and our capacity doubled within three months of launch.",
+      "Our staff used to spend countless hours manually updating, compiling, and formatting production data into reports. Now everything flows into the database automatically and the entire team can see results on a live dashboard. Productivity has never been higher.",
   },
   {
-    industry: "B2B Services",
-    headline: "From 63% to 95% On-Time Shipments",
-    client: "Confidential",
-    author: "Anthony Leach, COO",
+    industry: "Advertising & Design",
+    headline: "From Hours of Manual Work to Minutes with Custom Scripts",
+    client: "WeGrid",
+    author: "CEO",
     whatWeDid: [
-      "Mapped and rebuilt the entire order fulfillment process",
-      "Automated vendor communication and purchase order creation",
-      "Built delay-alert automations and escalation workflows",
+      "Analyzed existing design tool workflows for pamphlet and namecard production",
+      "Built custom scripts tailored to their current software environment",
+      "Reduced repetitive layout and formatting tasks from hours to minutes",
     ],
     quote:
-      "The automations that they build are amazing. Our on-time delivery rate jumped from 63% to 95% in just a few weeks after implementation.",
+      "Creating ad pamphlets and namecards used to take us hours of tedious manual work. Anhmake designed scripts that plug right into the tools we already use — what took hours now takes just a few minutes. It's been a game-changer for our team.",
   },
 ];
 
@@ -86,7 +86,7 @@ export default function CaseStudies() {
               className="bg-white border border-gray-200 rounded-2xl p-7 flex flex-col gap-5 hover:shadow-md transition-shadow duration-300"
             >
               {/* Industry badge */}
-              <span className="self-start inline-flex items-center px-3 py-1 rounded-full bg-axe-bg border border-gray-200 text-xs font-semibold text-axe-dark">
+              <span className="self-start inline-flex items-center px-3 py-1 rounded-full bg-white border border-gray-200 text-xs font-semibold text-axe-dark">
                 {c.industry}
               </span>
 
@@ -134,7 +134,7 @@ export default function CaseStudies() {
               {/* Author */}
               <div className="flex items-center gap-3 mt-auto">
                 <div
-                  className="w-9 h-9 rounded-full bg-axe-bg border border-gray-200 shrink-0"
+                  className="w-9 h-9 rounded-full bg-white border border-gray-200 shrink-0"
                   aria-hidden="true"
                 />
                 <div>

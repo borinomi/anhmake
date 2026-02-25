@@ -25,7 +25,7 @@ export default function ApproachIntro() {
 
         {/* CTA */}
         <Link
-          href="#"
+          href="/free-automation-consultation"
           className="inline-flex items-center gap-2 px-8 py-4 bg-axe-dark text-white font-semibold rounded-full text-base hover:bg-axe-blue transition-colors duration-200"
         >
           See How It Works

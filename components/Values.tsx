@@ -26,7 +26,7 @@ export default function Values() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-14">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-6 border border-axe-dark/20 rounded-full text-xs font-semibold text-axe-dark tracking-wider uppercase bg-axe-bg">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-6 border border-axe-dark/20 rounded-full text-xs font-semibold text-axe-dark tracking-wider uppercase bg-white">
             Values
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-axe-dark">
@@ -35,7 +35,7 @@ export default function Values() {
         </div>
 
         {/* Slider */}
-        <div className="bg-axe-bg border border-gray-200 rounded-3xl p-8 md:p-12 min-h-[260px] flex flex-col justify-between">
+        <div className="bg-white border border-gray-200 rounded-3xl p-8 md:p-12 min-h-[260px] flex flex-col justify-between shadow-sm">
           {/* Quote */}
           <blockquote className="text-lg md:text-xl text-axe-dark leading-relaxed mb-8">
             &ldquo;{current.text}&rdquo;

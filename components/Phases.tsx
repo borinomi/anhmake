@@ -79,7 +79,7 @@ export default function Phases() {
           >
             {/* Phase badge + icon */}
             <div className="flex items-center gap-3 mb-5">
-              <span className="inline-flex items-center px-3 py-1 rounded-full bg-axe-bg border border-gray-200 text-xs font-bold text-axe-dark">
+              <span className="inline-flex items-center px-3 py-1 rounded-full bg-white border border-gray-200 text-xs font-bold text-axe-dark">
                 Phase {phase.number}
               </span>
               <span className="text-axe-blue group-hover:text-axe-dark transition-colors">

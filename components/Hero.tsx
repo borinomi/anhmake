@@ -2,25 +2,8 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-axe-bg noise-bg py-20 md:py-28 lg:py-36">
+    <section className="relative overflow-hidden bg-white py-20 md:py-28 lg:py-36">
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 mb-8 border border-axe-dark/20 rounded-full bg-white/70 text-sm font-medium text-axe-dark shadow-sm">
-          <span className="inline-flex items-center justify-center w-5 h-5 bg-axe-blue rounded-full">
-            <svg
-              viewBox="0 0 16 16"
-              fill="none"
-              className="w-3 h-3"
-              aria-hidden="true"
-            >
-              <path
-                d="M8 2l1.5 4h4.5l-3.5 2.5 1.5 4L8 10l-4 2.5 1.5-4L2 6h4.5L8 2z"
-                fill="white"
-              />
-            </svg>
-          </span>
-          #1 AI Automation Agency
-        </div>
 
         {/* Heading */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-axe-dark leading-tight tracking-tight mb-6">
@@ -39,7 +22,7 @@ export default function Hero() {
         {/* CTA */}
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link
-            href="#"
+            href="/free-automation-consultation"
             className="inline-flex items-center gap-2 px-8 py-4 bg-axe-dark text-white font-semibold rounded-full text-base hover:bg-axe-blue transition-colors duration-200 shadow-lg"
           >
             FREE CONSULTATION
@@ -59,7 +42,7 @@ export default function Hero() {
             </svg>
           </Link>
           <Link
-            href="#"
+            href="/free-automation-consultation"
             className="inline-flex items-center gap-2 px-8 py-4 bg-transparent text-axe-dark font-semibold rounded-full text-base border border-axe-dark/30 hover:border-axe-dark transition-colors duration-200"
           >
             See Our Work

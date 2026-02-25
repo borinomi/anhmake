@@ -5,7 +5,7 @@ const badges = [
   { logo: "/logo.png", alt: "Anhmake", label: "Anhmake" },
 ];
 
-const stats = [
+export const stats = [
   { value: "350+", label: "Workflows automated" },
   { value: "30+", label: "Clients served" },
   { value: "10k+", label: "Manual hours saved" },

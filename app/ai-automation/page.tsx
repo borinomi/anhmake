@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { cases } from "@/components/CaseStudies";
 
 export const metadata = {
   title: "AI and Automation | Anhmake",
@@ -69,12 +70,11 @@ const useCases = [
 ];
 
 const technologies = [
-  { name: "ChatGPT", desc: "An artificial intelligence chatbot developed by OpenAI." },
-  { name: "OpenAI", desc: "The company that invented ChatGPT and other popular AI models. We're constantly testing its newest innovations." },
-  { name: "Google Gemini", desc: "Google's official AI project and competitor to Chat GPT." },
-  { name: "Zapier", desc: "A platform that connects your tools into automated workflows." },
-  { name: "Make.com", desc: "A Zapier competitor with a more visual interface that allows larger, more complex workflows." },
-  { name: "Python / JS", desc: "We also use Python and JavaScript to write custom scripting for more complex workflows." },
+  { name: "OpenAI", icon: "/icons/openai.png", desc: "The company that invented ChatGPT and other popular AI models. We're constantly testing its newest innovations." },
+  { name: "Claude", icon: "/icons/claude.png", desc: "Anthropic's frontier AI model — one of the most capable and safety-focused AI assistants we use to build intelligent automation workflows." },
+  { name: "Google Gemini", icon: "/icons/gemini.png", desc: "Google's official AI project and competitor to Chat GPT." },
+  { name: "n8n", icon: "/icons/n8n.png", desc: "A powerful open-source workflow automation tool we use to build complex, scalable automations fully tailored to your business." },
+  { name: "Python / JS", icon: "/icons/python.svg", desc: "We also use Python and JavaScript to write custom scripting for more complex workflows." },
 ];
 
 const whyPoints = [
@@ -96,31 +96,19 @@ const whyPoints = [
   },
 ];
 
-const testimonials = [
-  {
-    quote:
-      "Our company was struggling to keep up with the demands of our growing business until we found this automation agency. They helped us streamline our workflow and cut down our workload significantly.",
-    name: "Sarah M.",
-    role: "Director, Finance",
-  },
-  {
-    quote:
-      "I was skeptical at first about using an automation agency, but I am so glad I did. They helped me automate all of my repetitive tasks, which has given me back so much time in my day.",
-    name: "John D.",
-    role: "CEO",
-  },
-  {
-    quote:
-      "If you're looking for a way to scale your business without sacrificing your personal life, then this automation agency is the way to go.",
-    name: "Amanda L.",
-    role: "VP, Operations",
-  },
-];
+
 
 const apps = [
-  "Gmail", "Slack", "Zoom", "Google Drive", "MS Teams", "Excel",
-  "Discord", "Shopify", "Outlook", "Salesforce", "HubSpot", "Notion",
-  "Airtable", "Stripe", "Webflow", "Monday.com",
+  { name: "Gmail", icon: "/icons/gmail.png" },
+  { name: "Slack", icon: "/icons/slack.png" },
+  { name: "Zoom", icon: "/icons/zoom.png" },
+  { name: "Google Drive", icon: "/icons/google-drive.png" },
+  { name: "Teams", icon: "/icons/ms-teams.png" },
+  { name: "Excel", icon: "/icons/excel.png" },
+  { name: "Discord", icon: "/icons/discord.png" },
+  { name: "Outlook", icon: "/icons/outlook.png" },
+  { name: "Notion", icon: "/icons/notion.png" },
+  { name: "Airtable", icon: "/icons/airtable.svg" },
 ];
 
 export default function AIAutomationPage() {
@@ -156,7 +144,7 @@ export default function AIAutomationPage() {
       {/* Stats Banner */}
       <section className="bg-axe-blue py-14 text-white text-center">
         <div className="max-w-4xl mx-auto px-4">
-          <p className="text-5xl md:text-6xl font-bold mb-3">50,000+</p>
+          <p className="text-5xl md:text-6xl font-bold mb-3">10,000+</p>
           <p className="text-xl md:text-2xl font-medium opacity-80">
             Hours of <span className="underline underline-offset-4">manual</span> work have been replaced
             with AI and Automation for our clients
@@ -178,7 +166,7 @@ export default function AIAutomationPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {steps.map((s, i) => (
-              <div key={i} className="relative bg-axe-bg rounded-2xl p-8 text-center">
+              <div key={i} className="relative bg-white rounded-2xl p-8 text-center border border-axe-dark/8 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
                 <span className="inline-block text-xs font-bold tracking-widest text-axe-blue uppercase mb-4">
                   {s.step}
                 </span>
@@ -202,7 +190,7 @@ export default function AIAutomationPage() {
       </section>
 
       {/* Use Cases */}
-      <section className="py-24 bg-axe-bg">
+      <section className="py-24 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-axe-dark mb-4">
@@ -215,7 +203,7 @@ export default function AIAutomationPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {useCases.map((uc, i) => (
-              <div key={i} className="bg-white rounded-2xl p-8 border border-axe-dark/5 hover:shadow-md transition-shadow">
+              <div key={i} className="bg-white rounded-2xl p-8 border border-axe-dark/10 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200">
                 <div className="w-10 h-10 rounded-xl bg-axe-blue/10 flex items-center justify-center mb-4">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1d3d8c" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
@@ -237,29 +225,6 @@ export default function AIAutomationPage() {
         </div>
       </section>
 
-      {/* CTA Banner */}
-      <section className="bg-axe-dark py-20 text-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-10">
-            <h2 className="text-3xl md:text-4xl font-bold leading-tight">
-              Let's explore<br />use cases for AI
-            </h2>
-            <div>
-              <p className="text-white/60 mb-6 max-w-sm leading-relaxed">
-                We turn manual, silo'd and inconsistent work into operational excellence with our
-                AI and automation services.
-              </p>
-              <Link
-                href="/free-automation-consultation"
-                className="inline-flex items-center gap-2 px-8 py-4 bg-axe-blue text-white font-semibold rounded-full hover:opacity-90 transition-opacity"
-              >
-                Free Consultation
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Technologies */}
       <section className="py-24 bg-white">
         <div className="max-w-5xl mx-auto px-4">
@@ -274,9 +239,18 @@ export default function AIAutomationPage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
             {technologies.map((tech, i) => (
-              <div key={i} className="bg-axe-bg rounded-2xl p-6 border border-axe-dark/5">
-                <h3 className="font-bold text-axe-dark mb-2">{tech.name}</h3>
-                <p className="text-sm text-axe-dark/60 leading-relaxed">{tech.desc}</p>
+              <div key={i} className="bg-white rounded-2xl p-6 border border-axe-dark/10 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 flex flex-col gap-4">
+                <div className="h-10 flex items-center">
+                  <img
+                    src={tech.icon}
+                    alt={tech.name}
+                    className="max-h-10 max-w-[140px] w-auto object-contain"
+                  />
+                </div>
+                <div>
+                  <h3 className="font-bold text-axe-dark mb-2">{tech.name}</h3>
+                  <p className="text-sm text-axe-dark/60 leading-relaxed">{tech.desc}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -284,32 +258,32 @@ export default function AIAutomationPage() {
       </section>
 
       {/* App Connections */}
-      <section className="py-24 bg-axe-bg">
+      <section className="py-24 bg-white">
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center gap-16">
             <div className="md:w-1/2">
               <h2 className="text-3xl md:text-4xl font-bold text-axe-dark mb-4">
                 We connect to all your apps
               </h2>
-              <p className="text-axe-dark/60 mb-8 leading-relaxed">
+              <p className="text-axe-dark/60 leading-relaxed">
                 Plus thousands more through APIs, custom code and web hooks.
               </p>
-              <Link
-                href="/free-automation-consultation"
-                className="inline-flex items-center gap-2 px-8 py-4 bg-axe-dark text-white font-semibold rounded-full hover:bg-axe-blue transition-colors"
-              >
-                Free Consultation
-              </Link>
             </div>
-            <div className="md:w-1/2 grid grid-cols-4 gap-3">
-              {apps.map((app, i) => (
-                <div
-                  key={i}
-                  className="bg-white rounded-xl p-3 text-xs font-medium text-axe-dark text-center border border-axe-dark/5 shadow-sm"
-                >
-                  {app}
-                </div>
-              ))}
+            <div className="md:w-1/2">
+              <div className="grid grid-cols-5 gap-4">
+                {apps.map((app, i) => (
+                  <div key={i} className="flex flex-col items-center gap-2 group">
+                    <div className="w-14 h-14 rounded-full bg-white shadow-md border border-axe-dark/5 flex items-center justify-center overflow-hidden group-hover:shadow-lg group-hover:scale-110 transition-all duration-200">
+                      <img
+                        src={app.icon}
+                        alt={app.name}
+                        className="w-8 h-8 object-contain"
+                      />
+                    </div>
+                    <span className="text-[10px] text-axe-dark/50 font-medium text-center leading-tight">{app.name}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -354,8 +328,8 @@ export default function AIAutomationPage() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-24 bg-axe-bg">
+      {/* Case Studies */}
+      <section className="py-24 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-axe-dark mb-4">
@@ -364,13 +338,13 @@ export default function AIAutomationPage() {
             <p className="text-axe-dark/60">Hear what they have to say.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {testimonials.map((t, i) => (
+            {cases.map((c, i) => (
               <div key={i} className="bg-white rounded-2xl p-8 border border-axe-dark/5 shadow-sm">
                 <div className="text-yellow-400 text-xl mb-4">★★★★★</div>
-                <p className="text-axe-dark/70 text-sm leading-relaxed mb-6">"{t.quote}"</p>
+                <p className="text-axe-dark/70 text-sm leading-relaxed mb-6">&ldquo;{c.quote}&rdquo;</p>
                 <div>
-                  <p className="font-bold text-axe-dark text-sm">{t.name}</p>
-                  <p className="text-xs text-axe-dark/40">{t.role}</p>
+                  <p className="font-bold text-axe-dark text-sm">{c.author}</p>
+                  <p className="text-xs text-axe-dark/40">{c.client}</p>
                 </div>
               </div>
             ))}
@@ -378,30 +352,6 @@ export default function AIAutomationPage() {
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section className="py-20 bg-axe-dark text-white text-center">
-        <div className="max-w-2xl mx-auto px-4">
-          <p className="text-xs font-bold tracking-widest text-white/40 uppercase mb-4">
-            It&apos;s like hiring a Chief AI and Automation Officer
-          </p>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            For a fraction of the cost
-          </h2>
-          <p className="text-white/60 mb-8 leading-relaxed">
-            Get the expertise of a senior AI and automation team without the overhead.
-            We guarantee results in our contracts.
-          </p>
-          <Link
-            href="/free-automation-consultation"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-white text-axe-dark font-semibold rounded-full hover:bg-axe-blue hover:text-white transition-colors"
-          >
-            FREE CONSULTATION
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg>
-          </Link>
-        </div>
-      </section>
     </main>
   );
 }

@@ -30,7 +30,7 @@ const categories = [
   },
   {
     title: "Automation",
-    color: "bg-axe-bg border-gray-200",
+    color: "bg-white border-gray-200",
     titleColor: "text-axe-dark",
     tools: ["n8n"],
   },

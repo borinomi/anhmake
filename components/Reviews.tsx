@@ -124,7 +124,7 @@ export default function Reviews() {
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-12">
           <div>
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-4 border border-axe-dark/20 rounded-full text-xs font-semibold text-axe-dark tracking-wider uppercase bg-axe-bg">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-4 border border-axe-dark/20 rounded-full text-xs font-semibold text-axe-dark tracking-wider uppercase bg-white">
               Clutch Reviews
             </div>
             <h2 className="text-3xl sm:text-4xl font-bold text-axe-dark">
@@ -199,7 +199,7 @@ export default function Reviews() {
           {visible.map((review, i) => (
             <article
               key={`${page}-${i}`}
-              className="bg-axe-bg border border-gray-200 rounded-2xl p-7 flex flex-col gap-4"
+              className="bg-white border border-gray-200 rounded-2xl p-7 flex flex-col gap-4 shadow-sm hover:shadow-md transition-shadow duration-200"
             >
               <StarRating count={review.rating} />
 

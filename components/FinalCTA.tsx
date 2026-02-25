@@ -94,7 +94,7 @@ export default function FinalCTA() {
 
         {/* CTA Button */}
         <Link
-          href="#"
+          href="/free-automation-consultation"
           className="inline-flex items-center gap-2 px-10 py-5 bg-white text-axe-dark font-bold rounded-full text-base hover:bg-axe-blue hover:text-white transition-colors duration-200 shadow-xl"
         >
           Book a Free Consultation

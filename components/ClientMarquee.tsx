@@ -1,17 +1,10 @@
 const rowOne = [
-  "ESPN",
-  "Social Nucleus",
-  "LUX",
-  "madmedia",
-  "Feedbird",
-  "Clutch",
-  "McCormick Law Firm",
-  "Dwyer",
-  "Blueocean Capital",
-  "Builders CPA",
-  "Cleverly",
-  "Registix",
-  "JLL",
+  "위그리드",
+  "UBND Tỉnh Tây Ninh",
+  "Hoa Binh",
+  "YS Corp",
+  "Bespin Global",
+  "Kamhing",
 ];
 
 function MarqueeRow({
@@ -56,7 +49,7 @@ export default function ClientMarquee() {
           Trusted by
         </p>
         <h2 className="text-2xl md:text-3xl font-bold text-axe-dark">
-          50+ Clients Trust Anhmake
+          30+ Clients Trust Anhmake
         </h2>
       </div>
 

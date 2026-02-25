@@ -1,4 +1,7 @@
 import Link from "next/link";
+import { cases } from "@/components/CaseStudies";
+import { members } from "@/components/Team";
+import { stats } from "@/components/StatsBar";
 
 export const metadata = {
   title: "n8n Automation | Anhmake",
@@ -26,33 +29,6 @@ const phases = [
     phase: "PHASE 4",
     title: "Training, Metrics, SOPs",
     desc: "We guarantee adoption because we win buy-in from employees upfront, simplify procedures and train your team. Then, we set-up a dashboard with your most important metrics and proactively manage your automations.",
-  },
-];
-
-const caseStudies = [
-  {
-    industry: "Marketing Agency",
-    title: "5X Capacity, 2.4X Onboarding Speed",
-    what: "We migrated Cleverly's entire business to Monday replacing several tools, where they now manage sales, onboarding, account management and executive dashboards. Then, we automated their onboarding process which replaced a team of virtual assistants and cut speed-to-launch from 14 days to 5 days.",
-    quote: "Because of Axe we manage over 1,200 clients on Monday across our team of 30 employees with few issues, and have fully productized our services.",
-    name: "Daniel Paulino",
-    role: "VP Operations, Cleverly",
-  },
-  {
-    industry: "Financial Services",
-    title: "2X More Capacity From Better End-To-End Systems",
-    what: "Joseph had just acquired a large book of business from a retiring CPA and quickly needed to streamline his firm. So, we set-up and synced Monday and FinancialCents, then automated everything from sales to reoccurring bookkeeping tasks, to tax form intake and reminders.",
-    quote: "Ed, Nick and the team at Axe systematized my entire accounting firm using Monday and FinancialCents. I've doubled my client work without hiring another junior accountant or assistant. They've been great to work with.",
-    name: "Joseph Martin",
-    role: "CEO, Caffeinated Accountant",
-  },
-  {
-    industry: "B2B Services",
-    title: "From 63% to 95% On-Time Shipments",
-    what: "We created a centralized order management dashboard in Monday.com which doubled as a CRM to replace their existing CRM (Copper) and Google Sheets. Then, we automated order detail collection, invoicing, notifications and handoffs from sales to design to printing to shipping.",
-    quote: "We tell customers to expect a 2-3 week turnaround, so we need to make sure they hit that. We hired Axe to help us do that.",
-    name: "Anthony Leach",
-    role: "COO",
   },
 ];
 
@@ -125,20 +101,12 @@ const faqs = [
   },
 ];
 
-const teamMembers = [
-  { name: "Ed Axe", role: "CEO", badge: "Ex-Procter & Gamble" },
-  { name: "Fahmi Fahreza", role: "AI Consultant", badge: "n8n Community Award Winner (4X)" },
-  { name: "Tonya Medlin", role: "Operations Manager", badge: "200+ Monday Build-outs" },
-  { name: "Sachin Shrivastava", role: "Automation Engineer", badge: "400+ Automation Projects" },
-  { name: "Abril O.", role: "Project Manager", badge: "5-star Upwork Consultant" },
-  { name: "Alex Richardson", role: "Business Process Strategist", badge: "100+ Salespeople Managed" },
-];
 
 export default function N8nAutomationPage() {
   return (
     <main>
       {/* Hero */}
-      <section className="relative bg-axe-bg pt-24 pb-20 text-center overflow-hidden">
+      <section className="relative bg-white pt-24 pb-20 text-center overflow-hidden">
         <div className="max-w-4xl mx-auto px-4">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-axe-dark/20 bg-white text-sm font-medium text-axe-dark mb-8">
             <span className="w-2 h-2 rounded-full bg-axe-blue inline-block" />
@@ -153,7 +121,7 @@ export default function N8nAutomationPage() {
             to build automations that solve big problems and drive real results.
           </p>
           <Link
-            href="#"
+            href="/free-automation-consultation"
             className="inline-flex items-center gap-2 px-8 py-4 bg-axe-dark text-white font-semibold rounded-full hover:bg-axe-blue transition-colors duration-200"
           >
             Free n8n Consultation
@@ -168,18 +136,12 @@ export default function N8nAutomationPage() {
       <section className="bg-axe-blue py-14">
         <div className="max-w-4xl mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center text-white">
-            <div>
-              <p className="text-4xl md:text-5xl font-bold mb-2">1,000+</p>
-              <p className="text-white/70 font-medium">Workflows automated</p>
-            </div>
-            <div>
-              <p className="text-4xl md:text-5xl font-bold mb-2">400+</p>
-              <p className="text-white/70 font-medium">Clients served</p>
-            </div>
-            <div>
-              <p className="text-4xl md:text-5xl font-bold mb-2">100k</p>
-              <p className="text-white/70 font-medium">Manual hours saved</p>
-            </div>
+            {stats.map((stat, i) => (
+              <div key={i}>
+                <p className="text-4xl md:text-5xl font-bold mb-2">{stat.value}</p>
+                <p className="text-white/70 font-medium">{stat.label}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -199,7 +161,7 @@ export default function N8nAutomationPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {phases.map((p, i) => (
-              <div key={i} className="relative bg-axe-bg rounded-2xl p-8">
+              <div key={i} className="relative bg-white rounded-2xl p-8 border border-axe-dark/8 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
                 <span className="inline-block text-xs font-bold tracking-widest text-axe-blue uppercase mb-4">
                   {p.phase}
                 </span>
@@ -213,7 +175,7 @@ export default function N8nAutomationPage() {
           </div>
           <div className="text-center mt-12">
             <Link
-              href="#"
+              href="/free-automation-consultation"
               className="inline-flex items-center gap-2 px-8 py-4 bg-axe-dark text-white font-semibold rounded-full hover:bg-axe-blue transition-colors"
             >
               Free n8n Consultation
@@ -223,7 +185,7 @@ export default function N8nAutomationPage() {
       </section>
 
       {/* Team */}
-      <section className="py-24 bg-axe-bg">
+      <section className="py-24 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
             <p className="text-xs font-bold tracking-widest text-axe-blue uppercase mb-3">Our Team</p>
@@ -233,16 +195,18 @@ export default function N8nAutomationPage() {
             <p className="text-axe-dark/60 mt-4">Our team is comprised of widely respected influencers in the AI automation industry.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {teamMembers.map((m, i) => (
-              <div key={i} className="bg-white rounded-2xl p-8 border border-axe-dark/5 shadow-sm">
-                <div className="w-14 h-14 rounded-full bg-axe-blue/10 flex items-center justify-center mb-4 text-axe-blue font-bold text-xl">
-                  {m.name[0]}
+            {members.map((m) => (
+              <div key={m.name} className="bg-white border border-gray-200 rounded-2xl p-6 flex items-center gap-5 hover:shadow-sm transition-shadow duration-300">
+                <div className="w-16 h-16 rounded-xl bg-axe-blue/10 border border-axe-blue/20 flex items-center justify-center shrink-0">
+                  <span className="text-lg font-bold text-axe-blue">{m.initials}</span>
                 </div>
-                <h3 className="font-bold text-axe-dark text-lg">{m.name}</h3>
-                <p className="text-axe-dark/60 text-sm mb-3">{m.role}</p>
-                <span className="inline-block px-3 py-1 bg-axe-blue/10 text-axe-blue text-xs font-semibold rounded-full">
-                  {m.badge}
-                </span>
+                <div>
+                  <p className="font-bold text-axe-dark text-base">{m.name}</p>
+                  <p className="text-sm text-axe-dark/60 mt-0.5">{m.role}</p>
+                  <p className="mt-2 inline-flex items-center gap-1 text-xs font-semibold text-axe-blue bg-axe-blue/10 px-2.5 py-1 rounded-full">
+                    {m.credential}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
@@ -259,26 +223,32 @@ export default function N8nAutomationPage() {
             </h2>
           </div>
           <div className="space-y-8">
-            {caseStudies.map((cs, i) => (
-              <div key={i} className="bg-axe-bg rounded-2xl p-8 md:p-10">
+            {cases.map((c, i) => (
+              <div key={i} className="bg-white rounded-2xl p-8 md:p-10 border border-axe-dark/8 shadow-sm">
                 <div className="flex flex-col md:flex-row gap-10">
                   <div className="md:w-1/2">
                     <span className="inline-block px-3 py-1 border border-axe-blue text-axe-blue text-xs font-semibold rounded-full mb-4">
-                      {cs.industry}
+                      {c.industry}
                     </span>
-                    <h3 className="text-xl font-bold text-axe-dark mb-4">{cs.title}</h3>
+                    <h3 className="text-xl font-bold text-axe-dark mb-4">{c.headline}</h3>
                     <p className="text-xs font-bold tracking-widest text-axe-dark/40 uppercase mb-2">What We Did</p>
-                    <p className="text-sm text-axe-dark/60 leading-relaxed">{cs.what}</p>
+                    <ul className="space-y-1">
+                      {c.whatWeDid.map((item, j) => (
+                        <li key={j} className="text-sm text-axe-dark/60 leading-relaxed flex gap-2">
+                          <span className="text-axe-blue mt-0.5">•</span>{item}
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                   <div className="md:w-1/2 flex flex-col justify-between">
-                    <p className="text-axe-dark/70 text-base leading-relaxed italic mb-6">&ldquo;{cs.quote}&rdquo;</p>
+                    <p className="text-axe-dark/70 text-base leading-relaxed italic mb-6">&ldquo;{c.quote}&rdquo;</p>
                     <div className="flex items-center gap-3">
                       <div className="w-10 h-10 rounded-full bg-axe-blue/20 flex items-center justify-center font-bold text-axe-blue">
-                        {cs.name[0]}
+                        {c.author[0]}
                       </div>
                       <div>
-                        <p className="font-bold text-axe-dark text-sm">{cs.name}</p>
-                        <p className="text-xs text-axe-dark/40">{cs.role}</p>
+                        <p className="font-bold text-axe-dark text-sm">{c.author}</p>
+                        <p className="text-xs text-axe-dark/40">{c.client}</p>
                       </div>
                     </div>
                   </div>
@@ -329,7 +299,7 @@ export default function N8nAutomationPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Problems */}
-            <div className="bg-axe-bg rounded-2xl p-8">
+            <div className="bg-white rounded-2xl p-8 border border-axe-dark/10 shadow-sm">
               <h3 className="font-bold text-axe-dark text-lg mb-6 pb-4 border-b border-axe-dark/10">Problems</h3>
               <ul className="space-y-3">
                 {problems.map((item, i) => (
@@ -375,7 +345,7 @@ export default function N8nAutomationPage() {
           </div>
           <div className="text-center mt-12">
             <Link
-              href="#"
+              href="/free-automation-consultation"
               className="inline-flex items-center gap-2 px-8 py-4 bg-axe-dark text-white font-semibold rounded-full hover:bg-axe-blue transition-colors"
             >
               FREE CONSULTATION
@@ -385,7 +355,7 @@ export default function N8nAutomationPage() {
       </section>
 
       {/* Tech Stack */}
-      <section className="py-24 bg-axe-bg">
+      <section className="py-24 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
             <p className="text-xs font-bold tracking-widest text-axe-blue uppercase mb-3">Technology</p>
@@ -404,7 +374,7 @@ export default function N8nAutomationPage() {
                   {tech.items.map((item, j) => (
                     <span
                       key={j}
-                      className="px-3 py-1 bg-axe-bg text-axe-dark text-sm rounded-full border border-axe-dark/10"
+                      className="px-3 py-1 bg-gray-50 text-axe-dark text-sm rounded-full border border-axe-dark/10"
                     >
                       {item}
                     </span>
@@ -425,7 +395,7 @@ export default function N8nAutomationPage() {
               <h2 className="text-3xl md:text-4xl font-bold text-axe-dark">Common Questions</h2>
             </div>
             <Link
-              href="#"
+              href="/free-automation-consultation"
               className="inline-flex items-center gap-2 px-8 py-4 bg-axe-dark text-white font-semibold rounded-full hover:bg-axe-blue transition-colors shrink-0"
             >
               FREE CONSULTATION
@@ -457,7 +427,7 @@ export default function N8nAutomationPage() {
             highest-leverage workflows correctly the first time.
           </p>
           <Link
-            href="#"
+            href="/free-automation-consultation"
             className="inline-flex items-center gap-2 px-8 py-4 bg-white text-axe-dark font-semibold rounded-full hover:bg-axe-blue hover:text-white transition-colors"
           >
             FREE CONSULTATION

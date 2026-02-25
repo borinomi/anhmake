@@ -73,7 +73,7 @@ export default function Outcomes() {
             <div
               key={i}
               className={`grid grid-cols-3 ${
-                i % 2 === 0 ? "bg-white" : "bg-axe-bg/50"
+                i % 2 === 0 ? "bg-white" : "bg-gray-50"
               } border-t border-gray-100`}
             >
               {/* Problem */}
@@ -132,7 +132,7 @@ export default function Outcomes() {
         {/* CTA */}
         <div className="mt-10 text-center">
           <Link
-            href="#"
+            href="/free-automation-consultation"
             className="inline-flex items-center gap-2 px-8 py-4 bg-axe-dark text-white font-semibold rounded-full text-base hover:bg-axe-blue transition-colors duration-200"
           >
             Start Solving Your Constraints

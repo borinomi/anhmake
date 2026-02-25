@@ -143,7 +143,7 @@ export default function Navbar() {
           {/* CTA */}
           <div className="hidden md:block">
             <Link
-              href="#"
+              href="/free-automation-consultation"
               className="inline-flex items-center px-5 py-2.5 bg-axe-dark text-white text-sm font-semibold rounded-full hover:bg-axe-blue transition-colors duration-200"
             >
               Free Consultation
@@ -215,7 +215,7 @@ export default function Navbar() {
             ))}
             <div className="pt-3 px-2">
               <Link
-                href="#"
+                href="/free-automation-consultation"
                 className="block w-full text-center px-5 py-2.5 bg-axe-dark text-white text-sm font-semibold rounded-full"
                 onClick={() => setMobileOpen(false)}
               >

@@ -1,4 +1,4 @@
-const members = [
+export const members = [
   {
     name: "Anh Kim",
     role: "CEO, Anhmake",
@@ -25,7 +25,7 @@ export default function Team() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-14">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-6 border border-axe-dark/20 rounded-full text-xs font-semibold text-axe-dark tracking-wider uppercase bg-axe-bg">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-6 border border-axe-dark/20 rounded-full text-xs font-semibold text-axe-dark tracking-wider uppercase bg-white">
             Our Team
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-axe-dark leading-tight max-w-3xl mx-auto">
@@ -38,7 +38,7 @@ export default function Team() {
           {members.map((member) => (
             <div
               key={member.name}
-              className="bg-axe-bg border border-gray-200 rounded-2xl p-6 flex items-center gap-5 hover:shadow-sm transition-shadow duration-300"
+              className="bg-white border border-gray-200 rounded-2xl p-6 flex items-center gap-5 hover:shadow-sm transition-shadow duration-300"
             >
               {/* Avatar placeholder */}
               <div
