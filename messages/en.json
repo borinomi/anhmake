@@ -122,6 +122,43 @@
     "cta": "Book a Free Consultation",
     "note": "No commitment required. 30-minute strategy call."
   },
+  "Comments": {
+    "title": "Client Comments",
+    "review1Quote": "Our teams were spending hours every day creating, sending, and reviewing Excel charts for internal logistics. Anhmake built custom APIs and workflows that eliminated all of that — now our people focus on work that actually moves the needle.",
+    "review1Reviewer": "Operations Team",
+    "review1Company": "Hoa Binh",
+    "review2Quote": "Our staff used to spend countless hours manually updating, compiling, and formatting production data into reports. Now everything flows into the database automatically and the entire team can see results on a live dashboard. Productivity has never been higher.",
+    "review2Reviewer": "Production Management",
+    "review2Company": "YS Corp",
+    "review3Quote": "Creating ad pamphlets and namecards used to take us hours of tedious manual work. Anhmake designed scripts that plug right into the tools we already use — what took hours now takes just a few minutes. It's been a game-changer for our team.",
+    "review3Reviewer": "CEO",
+    "review3Company": "WeGrid"
+  },
+  "Team": {
+      "badge": "Our Team",
+      "heading": "Meet the team that designs every process from headquarters to the factory floor",
+      "member1Name": "Anh Kim",
+      "member1Role": "CEO, Anhmake",
+      "member1Credential": "Process Automation Specialist",
+      "member2Name": "Đỗ Huệ",
+      "member2Role": "Operations Manager",
+      "member2Credential": "Manage 350+ workflows",
+      "member3Name": "Eden Park",
+      "member3Role": "DL Manager",
+      "member3Credential": "Build customized DL engines"
+  },
+  "Values": {
+      "badge": "Values",
+      "heading": "Core values and beliefs",
+      "quote1Author": "Anh Kim",
+      "quote1Role": "CEO, Anhmake",
+      "quote1Initials": "AK",
+      "quote1Text": "Treat every client's problem as my own. If I'm not satisfied with the result, the client won't be either.",
+      "quote2Author": "Elon Musk",
+      "quote2Role": "CEO, SpaceX & Tesla",
+      "quote2Initials": "EM",
+      "quote2Text": "1. Question every requirement. 2. Delete any part or process you can. 3. Simplify and optimize. 4. Accelerate cycle time. 5. Automate. In that order — never start with automation."
+  },
   "Footer": {
     "tagline": "We audit your business and implement AI automations to reduce manual work and scale efficiently.",
     "services": "Services",

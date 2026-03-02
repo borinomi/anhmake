@@ -122,6 +122,43 @@
     "cta": "무료 상담 예약",
     "note": "약속 불필요. 30분 상담."
   },
+  "Comments": {
+    "title": "고객 후기",
+    "review1Quote": "우리 팀은 매일 내부 물류를 위한 Excel 차트를 작성, 발송, 검토하는 데 몇 시간씩 소비했습니다. Anhmake가 맞춤형 API와 워크플로우를 구축하여 이 모든 것을 제거했습니다 — 이제 우리 직원들은 실제로 성과를 내는 일에 집중합니다.",
+    "review1Reviewer": "운영팀",
+    "review1Company": "화빈",
+    "review2Quote": "직원들이 수동으로 생산 데이터를 업데이트, 취합, 형식화하여 보고서를 작성하는 데 수많은 시간을 소비했습니다. 이제 모든 것이 데이터베이스에 자동으로 저장되고 전체 팀이 라이브 대시보드에서 결과를 볼 수 있습니다. 생산성이 그 어느 때보다 높아졌습니다.",
+    "review2Reviewer": "생산 관리팀",
+    "review2Company": "YS Corp",
+    "review3Quote": "광고 팸플릿과 명함을 만드는 데 몇 시간씩 걸리는 지루한 수동 작업이 필요했습니다. Anhmake가 기존 도구에 바로 연결되는 스크립트를 설계했습니다 — 몇 시간이 걸리던 작업이 이제 몇 분이면 완료됩니다. 우리 팀에 획기적인 변화를 가져왔습니다.",
+    "review3Reviewer": "CEO",
+    "review3Company": "WeGrid"
+  },
+  "Team": {
+    "badge": "Our Team",
+    "heading": "제조기업의 본사에서 생산기지까지\n 모든 시작과 끝을 설계하는 실무경험을\n 가진 팀을 만나세요",
+    "member1Name": "Anh Kim",
+    "member1Role": "CEO, Anhmake",
+    "member1Credential": "Process Automation Specialist",
+    "member2Name": "Đỗ Huệ",
+    "member2Role": "Operations Manager",
+    "member2Credential": "Manage 350+ workflows",
+    "member3Name": "Eden Park",
+    "member3Role": "DL Manager",
+    "member3Credential": "Build customized DL engines"
+  },
+  "Values": {
+    "badge": "Values",
+    "heading": "핵심 가치와 믿음",
+    "quote1Author": "Anh Kim",
+    "quote1Role": "CEO, Anhmake",
+    "quote1Initials": "AK",
+    "quote1Text": "모든 고객의 문제를 우리의 문제처럼 생각합니다. 우리가 만족하지 않으면 고객도 만족하지 않습니다.",
+    "quote2Author": "Elon Musk",
+    "quote2Role": "CEO, SpaceX & Tesla",
+    "quote2Initials": "EM",
+    "quote2Text": "1. Question every requirement. 2. Delete any part or process you can. 3. Simplify and optimize. 4. Accelerate cycle time. 5. Automate. In that order — never start with automation."
+  },
   "Footer": {
     "tagline": "비즈니스를 감사하고 AI 자동화를 구현하여 수동 작업을 줄이고 효율적으로 성장합니다.",
     "services": "서비스",

@@ -122,6 +122,43 @@
     "cta": "無料相談を予約",
     "note": "約束不要。30分相談。"
   },
+  "Comments": {
+    "title": "お客様の声",
+    "review1Quote": "チームは毎日、社内物流用のExcelチャートの作成・送信・レビューに何時間も費やしていました。AnhmakeがカスタムAPIとワークフローを構築してそのすべてを排除しました — 今では実際に成果につながる仕事に集中できています。",
+    "review1Reviewer": "オペレーションチーム",
+    "review1Company": "ホアビン",
+    "review2Quote": "スタッフが生産データを手動で更新・集計・フォーマットしてレポートを作成するのに無数の時間を費やしていました。今やすべてが自動でデータベースに保存され、チーム全員がライブダッシュボードで結果を確認できます。生産性はかつてないほど高まっています。",
+    "review2Reviewer": "生産管理チーム",
+    "review2Company": "YS Corp",
+    "review3Quote": "広告パンフレットや名刺の作成には何時間もの退屈な手作業が必要でした。Anhmakeが既存のツールにそのまま連携するスクリプトを設計しました — 何時間もかかっていた作業が今ではほんの数分で完了します。チームにとって画期的な変化でした。",
+    "review3Reviewer": "CEO",
+    "review3Company": "WeGrid"
+  },
+  "Team": {
+    "badge": "Our Team",
+    "heading": "You get someone who thinks about your business and someone who builds the automations.",
+    "member1Name": "Anh Kim",
+    "member1Role": "CEO, Anhmake",
+    "member1Credential": "Process Automation Specialist",
+    "member2Name": "Đỗ Huệ",
+    "member2Role": "Operations Manager",
+    "member2Credential": "Manage 350+ workflows",
+    "member3Name": "Eden Park",
+    "member3Role": "DL Manager",
+    "member3Credential": "Build customized DL engines"
+  },
+  "Values": {
+    "badge": "Values",
+    "heading": "Core values and beliefs",
+    "quote1Author": "Anh Kim",
+    "quote1Role": "CEO, Anhmake",
+    "quote1Initials": "AK",
+    "quote1Text": "Treat every client's work as if it were my own. If I'm not satisfied with the result, the client won't be either.",
+    "quote2Author": "Elon Musk",
+    "quote2Role": "CEO, SpaceX & Tesla",
+    "quote2Initials": "EM",
+    "quote2Text": "1. Question every requirement. 2. Delete any part or process you can. 3. Simplify and optimize. 4. Accelerate cycle time. 5. Automate. In that order — never start with automation."
+  },
   "Footer": {
     "tagline": "ビジネスを監査し、AIオートメーションを実装して手作業を削減し、効率的に成長します。",
     "services": "サービス",

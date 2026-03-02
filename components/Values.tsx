@@ -1,24 +1,26 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 const quotes = [
   {
-    author: "Anh Kim",
-    role: "CEO, Anhmake",
-    initials: "AK",
-    text: "Treat every client's work as if it were my own. If I'm not satisfied with the result, the client won't be either.",
+    authorKey: "quote1Author",
+    roleKey: "quote1Role",
+    initialsKey: "quote1Initials",
+    textKey: "quote1Text",
   },
   {
-    author: "Elon Musk",
-    role: "CEO, SpaceX & Tesla",
-    initials: "EM",
-    text: "1. Question every requirement. 2. Delete any part or process you can. 3. Simplify and optimize. 4. Accelerate cycle time. 5. Automate. In that order — never start with automation.",
+    authorKey: "quote2Author",
+    roleKey: "quote2Role",
+    initialsKey: "quote2Initials",
+    textKey: "quote2Text",
   },
 ];
 
 export default function Values() {
   const [active, setActive] = useState(0);
+  const t = useTranslations("Values");
   const current = quotes[active];
 
   return (
@@ -27,10 +29,10 @@ export default function Values() {
         {/* Header */}
         <div className="text-center mb-14">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-6 border border-axe-dark/20 rounded-full text-xs font-semibold text-axe-dark tracking-wider uppercase bg-white">
-            Values
+            {t("badge")}
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-axe-dark">
-            Core values and beliefs
+            {t("heading")}
           </h2>
         </div>
 
@@ -38,7 +40,7 @@ export default function Values() {
         <div className="bg-white border border-gray-200 rounded-3xl p-8 md:p-12 min-h-[260px] flex flex-col justify-between shadow-sm">
           {/* Quote */}
           <blockquote className="text-lg md:text-xl text-axe-dark leading-relaxed mb-8">
-            &ldquo;{current.text}&rdquo;
+            &ldquo;{t(current.textKey as never)}&rdquo;
           </blockquote>
 
           {/* Author + Navigation */}
@@ -46,14 +48,14 @@ export default function Values() {
             <div className="flex items-center gap-4">
               <div className="w-11 h-11 rounded-full bg-axe-blue/10 border border-axe-blue/20 flex items-center justify-center shrink-0">
                 <span className="text-sm font-bold text-axe-blue">
-                  {current.initials}
+                  {t(current.initialsKey as never)}
                 </span>
               </div>
               <div>
                 <p className="font-bold text-axe-dark text-sm">
-                  {current.author}
+                  {t(current.authorKey as never)}
                 </p>
-                <p className="text-xs text-axe-dark/50">{current.role}</p>
+                <p className="text-xs text-axe-dark/50">{t(current.roleKey as never)}</p>
               </div>
             </div>
 

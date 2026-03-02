@@ -1,27 +1,25 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 export const reviews = [
   {
-    quote:
-      "Our teams were spending hours every day creating, sending, and reviewing Excel charts for internal logistics. Anhmake built custom APIs and workflows that eliminated all of that — now our people focus on work that actually moves the needle.",
-    reviewer: "Operations Team",
-    company: "Hoa Binh",
+    quoteKey: "review1Quote",
+    reviewerKey: "review1Reviewer",
+    companyKey: "review1Company",
     rating: 5,
   },
   {
-    quote:
-      "Our staff used to spend countless hours manually updating, compiling, and formatting production data into reports. Now everything flows into the database automatically and the entire team can see results on a live dashboard. Productivity has never been higher.",
-    reviewer: "Production Management",
-    company: "YS Corp",
+    quoteKey: "review2Quote",
+    reviewerKey: "review2Reviewer",
+    companyKey: "review2Company",
     rating: 5,
   },
   {
-    quote:
-      "Creating ad pamphlets and namecards used to take us hours of tedious manual work. Anhmake designed scripts that plug right into the tools we already use — what took hours now takes just a few minutes. It's been a game-changer for our team.",
-    reviewer: "CEO",
-    company: "WeGrid",
+    quoteKey: "review3Quote",
+    reviewerKey: "review3Reviewer",
+    companyKey: "review3Company",
     rating: 5,
   },
 ];
@@ -48,6 +46,7 @@ const CARDS_VISIBLE = 3;
 
 export default function Reviews() {
   const [page, setPage] = useState(0);
+  const t = useTranslations("Comments");
   const totalPages = Math.ceil(reviews.length / CARDS_VISIBLE);
   const visible = reviews.slice(
     page * CARDS_VISIBLE,
@@ -61,7 +60,7 @@ export default function Reviews() {
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-12">
           <div>
             <h2 className="text-3xl sm:text-4xl font-bold text-axe-dark">
-              Client Comments
+              {t("title")}
             </h2>
           </div>
 
@@ -125,7 +124,7 @@ export default function Reviews() {
               className="bg-white border border-gray-200 rounded-2xl p-7 flex flex-col gap-4 shadow-sm hover:shadow-md transition-shadow duration-200"
             >
               <blockquote className="text-axe-dark/80 text-sm leading-relaxed flex-1 italic">
-                &ldquo;{review.quote}&rdquo;
+                &ldquo;{t(review.quoteKey as never)}&rdquo;
               </blockquote>
 
               <div className="border-t border-gray-200 pt-4 flex items-center gap-3">
@@ -135,9 +134,9 @@ export default function Reviews() {
                 />
                 <div>
                   <p className="text-sm font-semibold text-axe-dark">
-                    {review.reviewer}
+                    {t(review.reviewerKey as never)}
                   </p>
-                  <p className="text-xs text-axe-dark/50">{review.company}</p>
+                  <p className="text-xs text-axe-dark/50">{t(review.companyKey as never)}</p>
                 </div>
               </div>
             </article>
