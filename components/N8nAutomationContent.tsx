@@ -31,6 +31,7 @@ const faqs = [
 
 export default function N8nAutomationContent() {
   const t = useTranslations("N8nAutomation");
+  const tStats = useTranslations("StatsBar");
 
   return (
     <main>
@@ -68,7 +69,7 @@ export default function N8nAutomationContent() {
             {stats.map((stat, i) => (
               <div key={i}>
                 <p className="text-4xl md:text-5xl font-bold mb-2">{stat.value}</p>
-                <p className="text-white/70 font-medium">{t(stat.key as "workflows" | "clients" | "hours")}</p>
+                <p className="text-white/70 font-medium">{tStats(stat.key as "workflows" | "clients" | "hours")}</p>
               </div>
             ))}
           </div>
